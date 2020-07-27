@@ -1,0 +1,115 @@
+@import '../../common/css/rem';
+@import '../../common/css/const';
+.public-welfare-ctr {
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+  overflow: auto;
+  padding-bottom: rem(20);
+  padding: rem(37) rem(44) rem(24) rem(44);
+  .pw-title {
+    color: #B2700B;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(32);
+    div {
+      flex: 1;
+      img {
+        height: rem(29);
+        width: rem(94);
+      }
+    }
+    div:nth-of-type(1) {
+      text-align: right;
+    }
+    div:nth-of-type(2) {
+      text-align: left;
+    }
+    span {
+      margin: 0 rem(20);
+    }
+    p:nth-of-type(1) {
+      font-size: rem(36);
+      margin-bottom: rem(14);
+    }
+    p:nth-of-type(2) {
+      font-size: rem(18);
+    }
+  }
+
+  .pw-btns-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: rem(50) 0 rem(38) 0;
+    .btns-l,
+    .btns-r {
+      height: rem(128);
+      width: rem(286);
+      border-radius: rem(10);
+      position: relative;
+      span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        text-align: center;
+        color: #FFF;
+        p:nth-of-type(1) {
+          font-size: $size-d;
+        }
+        p:nth-of-type(2) {
+          font-size: $size-a;
+        }
+      }
+    }
+    .btns-l {
+      background:linear-gradient(90deg,rgba(116,60,234,1),rgba(161,88,217,1));
+      box-shadow: 0px rem(4) rem(7) 0px rgba(159,87,218,0.43);
+    }
+    .btns-r {
+      background: linear-gradient(90deg,rgba(81,101,245,1),rgba(98,198,250,1));
+      box-shadow: 0px rem(4) rem(7) 0px rgba(59,80,196,0.43);
+    }
+  }
+
+  .pw-word-con {
+    padding: rem(30) rem(14) rem(142) rem(14);
+    background:rgba(255,251,229,1);
+    box-shadow: rem(5) rem(1) rem(10) 0px rgba(171,129,3,0.36);
+    border-radius: rem(20);
+    background: url('../../image/pw_word_con_bg.png') no-repeat left bottom;
+    background-size: 100% auto;
+    .pw-word-titpe {
+      position: relative;
+      height: rem(38);
+      line-height: rem(38);
+      padding-left: rem(14);
+      font-size: $size-d;
+      color: #B2700B;
+      font-weight: bolder;
+      margin-bottom: rem(20);
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: rem(10);
+        content: '';
+        height: 100%;
+        background: #FFC460;
+      }
+    }
+    .pw-word-s {
+      color: #563722;
+      font-size: $size-d;
+      line-height: rem(48);
+      margin-bottom: rem(32);
+      .blod {
+        font-weight: bolder;
+        color: #563722;
+      }
+    }
+  }
+
+}

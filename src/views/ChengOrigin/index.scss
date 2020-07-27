@@ -1,0 +1,51 @@
+@import '../../common/css/rem';
+@import '../../common/css/const';
+.top {
+    .colorDiv{
+        background:linear-gradient(119deg,rgba(245,178,98,1),rgba(246,212,146,1));
+        width:93%;
+        height:rem(100);
+        border-radius:rem(10);
+        margin: 0 rem(30);
+        margin-top: rem(20);
+        display: flex;
+        .txt{
+            display: flex;
+            padding: auto 0;
+            margin: auto 0;
+            width: 100%;
+            position: relative;
+            .originTxt{
+                font-size: rem(30);
+            }
+            .book1 img{
+                width: rem(33);
+                height: rem(37);
+                margin: auto 0;
+                padding: 0 rem(10);
+            }
+            .jian1{
+                position: absolute;
+                margin-right: rem(20) !important; ;
+                right: 0;
+                margin-top: rem(10);
+            }
+            .jian1 img{
+                width: rem(16);
+                height: rem(20);
+            }
+            div{
+                margin: auto 0;
+                font-size: rem(24);
+                color: #653A07;
+                font-weight: bold;
+            }
+        }
+    }
+        .background-odd{
+
+        }
+        .background-even{
+            background:linear-gradient(83deg,rgba(255,138,0,1),rgba(242,185,140,1)) !important;
+        }
+  }

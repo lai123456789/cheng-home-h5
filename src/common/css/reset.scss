@@ -1,0 +1,159 @@
+@import './rem.scss';
+@import './const.scss';
+// @font-face {
+//   font-family: 'PingFang';
+//   src: url(/src/common/font/PingFang.ttf);
+// }
+body, div, span, header, footer, nav, section, aside, article, ul, li, a, p, h1, h2, h3, h4,h5, h6, i, b,
+textarea, button, input, select, figure, figcaption,
+dl,dt,dd
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-weight: normal;
+  font-family: "PingFang", "Microsoft Yahei";
+  // font-family: "Microsoft Yahei";
+  box-sizing: border-box;
+  -webkit-tap-highlight-color:transparent;
+  -webkit-font-smoothing: antialiased;
+  &:hover{
+      outline: none;
+  }
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  color: #333;
+}
+p,div {
+  //line-height: 1;
+}
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+  -webkit-appearance: none;
+}
+textarea { -webkit-appearance: none;}
+img{  width:100%; height:100%;  }
+a,label,.pointer{  cursor: pointer  }
+select, input, textarea{  outline:none  }
+dl,
+dt,
+dd{
+  list-style: none;
+}
+ul{  list-style: none;  }
+.tc{  text-align: center;  }
+.tr{  text-align: right;  }
+.flex{  display: flex;  }
+.between{ display: flex; justify-content:space-between; }
+.around{ display: flex; justify-content:space-around; }
+.center{ display: flex; justify-content:center; }
+.middle{ display: flex; align-items:center; }
+.fi{  flex:1  }
+.ellipsis{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.wrap{  word-wrap:break-word;  word-break:break-all;  }
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+border-radius: 10px;
+background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+background-color: #555;
+}
+/*清除ie10+文本框的叉叉和密码输入框的眼睛图标*/
+::-ms-clear,::-ms-reveal{ display:none; }
+/*ie滚动条样式*/
+textarea {
+  line-height: 1.2 !important;
+  scrollbar-face-color:#fff;
+  scrollbar-arrow-color:#fff;
+  scrollbar-shadow-color:#fff;
+  scrollbar-dark-shadow-color:#fff;
+  scrollbar-base-color:#fff;
+  scrollbar-track-color:#fff;
+}
+
+.pub-textarea {
+  margin-bottom: rem(18);
+  border: rem(1) solid #666;
+  height: rem(236);
+  width: 100%;
+  font-size: $size-a;
+  padding: rem(10) rem(6);
+  border-radius: rem(6);
+}
+
+.pub-input {
+  margin-bottom: rem(18);
+  border: rem(1) solid #666;
+  width: 100%;
+  height: rem(56);
+  font-size: $size-a;
+  padding: 0 rem(6);
+  border-radius: rem(6)
+}
+
+.wait-wrap {
+  padding-top: rem(100);
+  text-align: center;
+  img {
+    width: rem(444);
+    height: rem(314);
+    margin-bottom: rem(98);
+  }
+  p {
+    color: #EAA01E;
+    font-size: rem(40);
+    line-height: rem(56);
+    letter-spacing: rem(10);
+    font-weight: bolder;
+  }
+}
+.pu-no-data {
+ text-align: center;
+ color: #999;
+ padding-top: rem(100);
+}
+
+// ===================  mint-ui modify start ==================== //
+.page-infinite-loading {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+// ===================  mint-ui modify end  ==================== //
+
+
+//公共按钮样式
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: rem(1) solid #666;
+  font-size: $size-a;
+  padding: 0 rem(6);
+  border-radius: rem(35);
+  width:rem(460);
+  height:rem(70);
+}

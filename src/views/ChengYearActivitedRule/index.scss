@@ -1,0 +1,71 @@
+@import '../../common/css/rem';
+@import '../../common/css/const';
+.page{
+  width: 100%;
+  //height: 100%;
+  background-size: 100% 100%;
+  background-image: url("../../image/activitedRule.png");
+  .t-index{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: rem(40) 0;
+    .title{
+      width: rem(400);
+      height: rem(57);
+      background-size: 100% 100%;
+      background-image: url("../../image/activitedRuletitle.png");
+      color: #940000;
+      font-size: rem(32);
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .way{
+    .w-index{
+      padding: 0 rem(75) rem(75) rem(75);
+      .wTitle{
+        color: #FEF1C8;
+        font-size: rem(32);
+        font-weight: bold;
+        line-height: rem(100);
+        text-align: center;
+      }
+      p{
+        margin-bottom: rem(20);
+        color: #FFFFFF;
+        font-size: rem(28);
+        line-height: rem(40);
+        letter-spacing: rem(2);
+      }
+    }
+  }
+  .attention{
+    padding: 0 rem(60) rem(140) rem(60);
+    margin-top: rem(20);
+    .atten{
+      padding: 0  rem(20) rem(20) rem(20);
+      background: #B50016;
+      border-radius: rem(7);
+      .tTitle{
+        color: #FEF1C8;
+        font-size: rem(32);
+        font-weight: bold;
+        line-height: rem(100);
+        text-align: center;
+      }
+      p{
+        margin-bottom: rem(20);
+        color: #FEF1C8;
+        font-size: rem(28);
+        line-height: rem(40);
+        letter-spacing: rem(2);
+      }
+    }
+
+  }
+}
+
+

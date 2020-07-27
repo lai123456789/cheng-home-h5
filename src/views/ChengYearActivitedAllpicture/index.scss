@@ -1,0 +1,196 @@
+@import '../../common/css/rem';
+@import '../../common/css/const';
+.return-goods-ctner {
+  height: 100%;
+  .return-des-outer {
+    padding: rem(18) rem(30);
+    .topDiv{
+      border:rem(1) solid rgba(220,220,220,1);
+      box-shadow:0 rem(1) rem(8) 0 rgba(156,156,156,0.45);
+      border-radius: rem(30);
+      min-height: rem(48);
+      width: 100%;
+      display: flex;
+      img{
+        width: rem(35);
+        height: rem(35);
+        padding: rem(10);
+      }
+      input{
+        width: rem(350);
+        background: none;
+      }
+    }
+  }
+  .c-index{
+    padding: rem(10);
+    .content{
+      border:rem(1) solid #EEE;
+      box-shadow:rem(1) rem(1) rem(8) 0 rgba(156,156,156,0.2);
+      border-radius: rem(10);
+      margin: rem(10);
+      display: inline-block;
+      .img{
+        //width: rem(340);
+        //height: rem(330);
+        position: relative;
+        img:nth-of-type(1){
+          width: 100%;
+          height: 100%;
+        }
+        .bg-text{
+          position: absolute;
+          left: 0;
+          height: rem(30);
+          width: rem(110);
+          top: 0;
+          span{
+            position: absolute;
+            top: rem(18);
+            left: rem(14);
+            font-size: rem(18);
+            color: #FFFFFF;
+          }
+          img{
+            width: 100%;
+            height: 100%;
+            margin-top: rem(18);
+          }
+        }
+
+      }
+      .C1{
+
+        line-height: rem(45);
+        width: rem(340);
+        padding-left: rem(10);
+        //overflow: hidden; //文本超出 省略号代替
+        //text-overflow: ellipsis;
+        //white-space: nowrap;
+        //width: rem(300);//文本超出 省略号代替
+        display: flex;
+        justify-content: space-between;
+        p{
+          color: #010101;
+          font-weight: bold;
+          font-size: rem(26);
+        }
+        img{
+          width: rem(31);
+          height: rem(84);
+          margin-right: rem(8);
+          margin-left: rem(10);
+        }
+      }
+
+    }
+  }
+//瀑布流布局star
+  .waterfall-wrapper{
+    //display: flex;
+    width: 100%;
+    //justify-content: center;
+  }
+  ul {
+    width: 43%;
+    margin: 10px;
+  }
+  ul.left-waterfall {
+    float: left;
+    margin-left: rem(40);
+  }
+  ul.right-waterfall {
+    //float: right;
+    position: absolute;
+    right: rem(20);
+  }
+  li.item {
+    width: 100%;
+    position: relative;
+    .p-xin{
+      position: absolute;
+      right: rem(-5);
+      margin-top: rem(-57);
+      background-size: 100% 100%;
+      background-image: url("../../image/xinBg.png");
+      padding: rem(8);
+      //width: rem(75);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: rem(10);
+      img{
+        width: rem(40);
+        height: rem(36);
+        margin-right: rem(5);
+      }
+      .xin-active{
+        transition: all 1s ease-in;
+        transform-style: preserve-3d;
+        transform: rotateY(340deg);
+      }
+      .xin-active-right{
+        transition: all 1s ease-in;
+        transform-style: preserve-3d;
+        transform: rotateY(340deg);
+      }
+      p{
+        font-size: rem(28);
+        font-weight: bold;
+        color:#FB1F1F;
+        -webkit-text-stroke:rem(0.2) white;
+        text-stroke:rem(0.2) white;
+        margin-right: rem(10);
+      }
+
+    }
+
+    .bgtext{
+      position: absolute;
+      left: 0;
+      height: rem(40);
+      width: rem(150);
+      top: 0;
+      span{
+        position: absolute;
+        top: rem(20);
+        left: rem(8);
+        font-size: rem(22);
+        color: #FFFFFF;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        margin-top: rem(18);
+      }
+    }
+  }
+
+  .text{
+    box-shadow:rem(1) rem(1) rem(8) 0 rgba(156,156,156,0.2);
+    border-bottom-left-radius: rem(10);
+    border-bottom-right-radius: rem(10);
+    margin-bottom: rem(15);
+    display: flex;
+    justify-content: space-between;
+    //line-height: rem(45);
+    width: 100%;
+    padding-left: rem(10);
+    p{
+      color: #010101;
+      font-weight: bold;
+      font-size: rem(26);
+      flex: 1;
+    }
+    img{
+      width: rem(31);
+      height: rem(84);
+      margin-right: rem(8);
+      margin-left: rem(10);
+      margin-top: rem(-10);
+    }
+  }
+  //瀑布流布局end
+
+
+}

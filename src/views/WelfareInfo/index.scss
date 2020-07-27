@@ -1,0 +1,80 @@
+@import '../../common/css/rem';
+@import '../../common/css/const';
+.WelfareInfo-ctr {
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+  overflow: auto;
+  padding: rem(37) rem(44) rem(24) rem(44);
+  .pw-sub-title {
+    color: #A60605;
+    font-size: $size-c;
+    padding-bottom: rem(20);
+    border-bottom: rem(1) solid rgba(250,222,172,.82);
+    text-align: center;
+    margin-bottom: rem(23);
+  }
+  .pw-title {
+    color: #B2700B;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(32);
+    div {
+      flex: 1;
+      img {
+        height: rem(29);
+        width: rem(94);
+      }
+    }
+    div:nth-of-type(1) {
+      text-align: right;
+    }
+    div:nth-of-type(2) {
+      text-align: left;
+    }
+    span {
+      margin: 0 rem(20);
+    }
+    p:nth-of-type(1) {
+      font-size: rem(36);
+    }
+  }
+
+  ul {
+    
+    li {
+      background: linear-gradient(103deg,rgba(232,197,122,1),rgba(255,255,255,1),rgba(252,217,162,1));
+      box-shadow:  rem(2) rem(4) rem(10) rgba(133,133,133,0.36);
+      padding: rem(30) rem(24);
+      position: relative;
+      margin-bottom: rem(28);
+      width: 100%;
+      color: #774A05;
+      p {
+        font-size: $size-a;
+        margin-bottom: rem(21);
+      }
+      p:nth-of-type(1) {
+        font-size: $size-d;
+      }
+      .dis-btn-wrap {
+        overflow: hidden;
+        // height: rem(48);
+        text-align: right;
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          padding: rem(12) rem(67) rem(16) rem(30);
+          border: rem(2) solid rgba(166,6,5,1);
+          border-radius: rem(24);
+          font-size: rem(24);
+          background: url('../../image/dis_right_ic.png') no-repeat rem(140) center;
+          background-size: rem(32) rem(32);
+        }
+      }
+    }
+  }
+}
+
+
